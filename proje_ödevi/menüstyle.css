@@ -38,12 +38,12 @@
     color: white;
 }
 .home .content h3 span{
-    color: #000000;
+    color: #0a3a66;
     font-weight: bold;
 }
 .changecontent::after{
     content: ' ';
-    color: #1f044b;
+    color: #0a3a66;
     font-weight: bold;
     font-size: 40px;
     animation: changetext 20s infinite linear;
