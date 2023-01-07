@@ -1,0 +1,91 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#Video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  #Video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    background-color: black;
+  }
+  .home{
+    width: 100%;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 0;
+    
+}
+
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.home .content h3{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.home .content h3 span{
+    color: #0a3a66;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: #0a3a66;
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    
+    0%{content: "Hürkuş";}
+    10%{content: "TF-X";}
+    20%{content: "Atak";}
+    30%{content: "Anka";}
+    40%{content: "Altay";}
+    50%{content: "Kirpi";}
+    60%{content: "Akıncı";}
+    80%{content: "Ejder Yalçın";}
+    100%{content: "Milgem";}
+}
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+.title{
+  text-align: center;
+  font-size: 4vmin;
+  color: white;
+}
+.arrow{
+  position: fixed;
+  border-radius: 50px;
+  color: white;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  line-height: 50px;
+}
+.arrow:hover{
+  color: white;
+}
